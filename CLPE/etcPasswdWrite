@@ -1,0 +1,6 @@
+step 1 
+	format 
+	user8:x:1007:1007:user8,,,:/home/user8:/bin/bash
+
+step 2 
+	test:x:0:0:root:/root:/bin/bash

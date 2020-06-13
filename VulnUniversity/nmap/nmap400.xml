@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sat Jun 13 10:08:16 2020 as: nmap -p-400 -oA nmap/nmap400 10.10.88.126 -->
+<nmaprun scanner="nmap" args="nmap -p-400 -oA nmap/nmap400 10.10.88.126" start="1592057296" startstr="Sat Jun 13 10:08:16 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="400" services="1-400"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="SYN Stealth Scan" time="1592057300" percent="31.37" remaining="7" etc="1592057307"/>
+<taskprogress task="SYN Stealth Scan" time="1592057301" percent="42.42" remaining="6" etc="1592057306"/>
+<taskprogress task="SYN Stealth Scan" time="1592057301" percent="51.92" remaining="4" etc="1592057305"/>
+<host starttime="1592057296" endtime="1592057320"><status state="up" reason="timestamp-reply" reason_ttl="61"/>
+<address addr="10.10.88.126" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="397">
+<extrareasons reason="resets" count="397"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="netbios-ssn" method="table" conf="3"/></port>
+</ports>
+<times srtt="629364" rttvar="46201" to="814168"/>
+</host>
+<runstats><finished time="1592057320" timestr="Sat Jun 13 10:08:40 2020" elapsed="24.19" summary="Nmap done at Sat Jun 13 10:08:40 2020; 1 IP address (1 host up) scanned in 24.19 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

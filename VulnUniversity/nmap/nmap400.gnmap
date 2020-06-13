@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sat Jun 13 10:08:16 2020 as: nmap -p-400 -oA nmap/nmap400 10.10.88.126
+Host: 10.10.88.126 ()	Status: Up
+Host: 10.10.88.126 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 139/open/tcp//netbios-ssn///	Ignored State: closed (397)
+# Nmap done at Sat Jun 13 10:08:40 2020 -- 1 IP address (1 host up) scanned in 24.19 seconds
