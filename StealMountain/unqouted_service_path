@@ -1,0 +1,7 @@
+so unquoted service path is when 
+
+it goes like 
+
+c.exe c\program.exe c\\Program files.exe c\program files\vulnsoft.exe 
+
+you can replace things in path to see the file directry permisions yyou use icacls.exe and to see service restart permision you use accesscheck.exe

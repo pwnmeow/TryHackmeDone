@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Jun 15 13:09:11 2020 as: nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse -oA nmap/enumshare 10.10.191.186
+Host: 10.10.191.186 ()	Status: Up
+Host: 10.10.191.186 ()	Ports: 445/open/tcp//microsoft-ds///
+# Nmap done at Mon Jun 15 13:10:42 2020 -- 1 IP address (1 host up) scanned in 90.63 seconds
