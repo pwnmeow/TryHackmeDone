@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon Jun 15 19:07:18 2020 as: nmap -p- -&#45;max-retries 0 -oA nmap/allports 10.10.8.233 -->
+<nmaprun scanner="nmap" args="nmap -p- -&#45;max-retries 0 -oA nmap/allports 10.10.8.233" start="1592262438" startstr="Mon Jun 15 19:07:18 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="SYN Stealth Scan" time="1592262440" percent="0.05"/>
+<taskprogress task="SYN Stealth Scan" time="1592262485" percent="13.09" remaining="306" etc="1592262791"/>
+<taskprogress task="SYN Stealth Scan" time="1592262485" percent="13.16" remaining="304" etc="1592262789"/>
+<taskprogress task="SYN Stealth Scan" time="1592262485" percent="13.32" remaining="300" etc="1592262784"/>
+<taskprogress task="SYN Stealth Scan" time="1592262486" percent="13.40" remaining="304" etc="1592262790"/>
+<host starttime="1592262438" endtime="1592262619"><status state="up" reason="echo-reply" reason_ttl="61"/>
+<address addr="10.10.8.233" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="61079">
+<extrareasons reason="resets" count="61079"/>
+</extraports>
+<extraports state="filtered" count="4454">
+<extrareasons reason="no-responses" count="4454"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="587851" rttvar="1070" to="592131"/>
+</host>
+<runstats><finished time="1592262619" timestr="Mon Jun 15 19:10:19 2020" elapsed="180.58" summary="Nmap done at Mon Jun 15 19:10:19 2020; 1 IP address (1 host up) scanned in 180.58 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

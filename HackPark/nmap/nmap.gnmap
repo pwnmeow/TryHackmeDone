@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Jun 15 20:28:20 2020 as: nmap -sC -sV -Pn -oA nmap/nmap 10.10.160.235
+Host: 10.10.160.235 ()	Status: Up
+Host: 10.10.160.235 ()	Ports: 80/open/tcp//http//Microsoft IIS httpd 8.5/, 3389/open/tcp//ssl|ms-wbt-server?///	Ignored State: filtered (998)
+# Nmap done at Mon Jun 15 20:30:21 2020 -- 1 IP address (1 host up) scanned in 121.12 seconds
