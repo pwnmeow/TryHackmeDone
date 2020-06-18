@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Jun 17 21:00:45 2020 as: nmap -p- -&#45;max-retries 0 -oA nmap/allports 10.10.52.75 -->
+<nmaprun scanner="nmap" args="nmap -p- -&#45;max-retries 0 -oA nmap/allports 10.10.52.75" start="1592442045" startstr="Wed Jun 17 21:00:45 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="SYN Stealth Scan" time="1592442316" percent="73.43" remaining="98" etc="1592442414"/>
+<taskprogress task="SYN Stealth Scan" time="1592442316" percent="73.60" remaining="97" etc="1592442413"/>
+<host starttime="1592442045" endtime="1592442520"><status state="up" reason="echo-reply" reason_ttl="61"/>
+<address addr="10.10.52.75" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="52580">
+<extrareasons reason="resets" count="52580"/>
+</extraports>
+<extraports state="filtered" count="12952">
+<extrareasons reason="no-responses" count="12952"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="mysql" method="table" conf="3"/></port>
+</ports>
+<times srtt="4516186" rttvar="356031" to="5940310"/>
+</host>
+<runstats><finished time="1592442521" timestr="Wed Jun 17 21:08:41 2020" elapsed="476.10" summary="Nmap done at Wed Jun 17 21:08:41 2020; 1 IP address (1 host up) scanned in 476.10 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

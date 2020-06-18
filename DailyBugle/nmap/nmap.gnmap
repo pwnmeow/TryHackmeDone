@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Wed Jun 17 20:56:44 2020 as: nmap -sC -sV -Pn -oA nmap/nmap 10.10.52.75
+Host: 10.10.52.75 ()	Status: Up
+Host: 10.10.52.75 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.4 (protocol 2.0)/, 80/open/tcp//ssl|http//Apache|2.4.6 (CentOS) PHP|5.6.40/, 3306/open/tcp//mysql//MariaDB (unauthorized)/	Ignored State: closed (997)
+# Nmap done at Wed Jun 17 20:59:54 2020 -- 1 IP address (1 host up) scanned in 190.44 seconds

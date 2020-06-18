@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Wed Jun 17 16:33:11 2020 as: nmap -p445 -script smb-protocols -oA nmap/smb445 10.10.65.221
+Host: 10.10.65.221 ()	Status: Up
+Host: 10.10.65.221 ()	Ports: 445/open/tcp//microsoft-ds///
+# Nmap done at Wed Jun 17 16:33:18 2020 -- 1 IP address (1 host up) scanned in 7.54 seconds

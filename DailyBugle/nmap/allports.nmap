@@ -1,0 +1,11 @@
+# Nmap 7.80 scan initiated Wed Jun 17 21:00:45 2020 as: nmap -p- --max-retries 0 -oA nmap/allports 10.10.52.75
+Warning: 10.10.52.75 giving up on port because retransmission cap hit (0).
+Nmap scan report for 10.10.52.75
+Host is up (4.5s latency).
+Not shown: 52580 closed ports, 12952 filtered ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+3306/tcp open  mysql
+
+# Nmap done at Wed Jun 17 21:08:41 2020 -- 1 IP address (1 host up) scanned in 476.10 seconds

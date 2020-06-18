@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Jun 17 16:33:11 2020 as: nmap -p445 -script smb-protocols -oA nmap/smb445 10.10.65.221 -->
+<nmaprun scanner="nmap" args="nmap -p445 -script smb-protocols -oA nmap/smb445 10.10.65.221" start="1592425991" startstr="Wed Jun 17 16:33:11 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="445"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1592425991" endtime="1592425998"><status state="up" reason="echo-reply" reason_ttl="61"/>
+<address addr="10.10.65.221" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-protocols" output="&#xa;  dialects: &#xa;    NT LM 0.12 (SMBv1) [dangerous, but default]&#xa;    2.02&#xa;    2.10&#xa;    3.00&#xa;    3.02&#xa;    3.11"><table key="dialects">
+<elem>NT LM 0.12 (SMBv1) [dangerous, but default]</elem>
+<elem>2.02</elem>
+<elem>2.10</elem>
+<elem>3.00</elem>
+<elem>3.02</elem>
+<elem>3.11</elem>
+</table>
+</script></hostscript><times srtt="456555" rttvar="343183" to="1829287"/>
+</host>
+<runstats><finished time="1592425998" timestr="Wed Jun 17 16:33:18 2020" elapsed="7.54" summary="Nmap done at Wed Jun 17 16:33:18 2020; 1 IP address (1 host up) scanned in 7.54 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,38 @@
+droopescan scan -t 50 -o standard -e a -u http://10.10.52.75/
+[+] Site identified as joomla.
+[+] Possible interesting urls found:                                            
+    Detailed version information. - http://10.10.52.75/administrator/manifests/files/joomla.xml
+    Login page. - http://10.10.52.75/administrator/
+    License file. - http://10.10.52.75/LICENSE.txt
+    Version attribute contains approx version - http://10.10.52.75/plugins/system/cache/cache.xml
+
+[+] Possible version(s):
+    3.7.0
+    3.7.0-beta2
+    3.7.0-beta3
+    3.7.0-beta4
+    3.7.0-rc4
+    3.7.1
+    3.7.1-rc1
+    3.7.1-rc2
+    3.7.2
+    3.7.3
+    3.7.3-beta1
+    3.7.3-rc2
+    3.7.4
+    3.7.4-beta1
+    3.7.4-rc1
+    3.7.5
+    3.8.0
+    3.8.0-beta1
+    3.8.0-beta2
+    3.8.0-beta3
+    3.8.0-beta4
+    3.8.1
+    3.8.1-rc
+    3.8.2
+    3.8.2-rc
+    3.8.3
+    3.8.3-rc
+
+

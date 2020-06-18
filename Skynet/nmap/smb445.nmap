@@ -1,0 +1,18 @@
+# Nmap 7.80 scan initiated Wed Jun 17 16:33:11 2020 as: nmap -p445 -script smb-protocols -oA nmap/smb445 10.10.65.221
+Nmap scan report for 10.10.65.221
+Host is up (0.46s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+
+Host script results:
+| smb-protocols: 
+|   dialects: 
+|     NT LM 0.12 (SMBv1) [dangerous, but default]
+|     2.02
+|     2.10
+|     3.00
+|     3.02
+|_    3.11
+
+# Nmap done at Wed Jun 17 16:33:18 2020 -- 1 IP address (1 host up) scanned in 7.54 seconds

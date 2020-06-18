@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Wed Jun 17 21:00:45 2020 as: nmap -p- --max-retries 0 -oA nmap/allports 10.10.52.75
+Host: 10.10.52.75 ()	Status: Up
+Host: 10.10.52.75 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 3306/open/tcp//mysql///
+# Nmap done at Wed Jun 17 21:08:41 2020 -- 1 IP address (1 host up) scanned in 476.10 seconds

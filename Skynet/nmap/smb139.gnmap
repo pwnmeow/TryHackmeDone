@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Wed Jun 17 16:33:48 2020 as: nmap -p 139 -script smb-protocols -oA nmap/smb139 10.10.65.221
+Host: 10.10.65.221 ()	Status: Up
+Host: 10.10.65.221 ()	Ports: 139/open/tcp//netbios-ssn///
+# Nmap done at Wed Jun 17 16:33:58 2020 -- 1 IP address (1 host up) scanned in 10.11 seconds

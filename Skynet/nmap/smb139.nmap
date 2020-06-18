@@ -1,0 +1,18 @@
+# Nmap 7.80 scan initiated Wed Jun 17 16:33:48 2020 as: nmap -p 139 -script smb-protocols -oA nmap/smb139 10.10.65.221
+Nmap scan report for 10.10.65.221
+Host is up (0.46s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+
+Host script results:
+| smb-protocols: 
+|   dialects: 
+|     NT LM 0.12 (SMBv1) [dangerous, but default]
+|     2.02
+|     2.10
+|     3.00
+|     3.02
+|_    3.11
+
+# Nmap done at Wed Jun 17 16:33:58 2020 -- 1 IP address (1 host up) scanned in 10.11 seconds
